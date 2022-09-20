@@ -1,0 +1,11 @@
+{
+	"compilerOptions": {
+		"module": "commonjs",
+		"noImplicitAny": true,
+		"sourceMap": true,
+		"outDir": "dist",
+		"baseUrl": ".",
+		"target": "esnext",
+		"lib": ["es6", "dom"]
+	}
+}
