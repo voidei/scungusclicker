@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.2.2
+
+```diff
++ fixed github not pushing the scunguslib
+```
+
 ## 0.2.1
 
 ```diff
