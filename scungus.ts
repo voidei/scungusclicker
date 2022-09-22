@@ -8,7 +8,7 @@ scungusBought = 0;			// number of scungus bought
 scunguses = 0;				// number of scungus
 scungusClicks = 0;			// number of scungus clicked
 scungusObtainus = 0;			// total number of scungus
-scungusCost= 0;				// sost of scungus
+scungusCost= 10;				// sost of scungus
 
 /*---------------------- multiplicative scungi ----------------------*/
 
@@ -20,12 +20,11 @@ clickScungus() {
 	this.scungusMultiplicative = 1+(Math.floor(this.scungusBought*2.5));
 	this.scunguses += this.scungusMultiplicative;
 	this.scungusClicks += 1;
-	this.scungusObtainus =+ 1;
 
 	document.getElementById("scunguses")!.innerHTML = this.scunguses.toString();
-	document.getElementById("scungusbought")!.innerHTML = this.scungusBought.toString();
-	document.getElementById("scunguscost")!.innerHTML = this.scungusCost.toString();
-	document.getElementById("scungusclicks")!.innerHTML = this.scungusClicks.toString();
+	document.getElementById("scungusBought")!.innerHTML = this.scungusBought.toString();
+	document.getElementById("scungusCost")!.innerHTML = this.scungusCost.toString();
+	document.getElementById("scungusClicks")!.innerHTML = this.scungusClicks.toString();
 
 }
 
@@ -44,10 +43,10 @@ buyScungus() {
 	}
 
 
-	document.getElementById("scunguses").innerHTML = this.scunguses.toString();
-	document.getElementById("scungusBought").innerHTML = this.scungusBought.toString();
-	document.getElementById("scungusCost").innerHTML = this.scungusCost.toString();
-	document.getElementById("scungusClicks").innerHTML = this.scungusClicks.toString();
+	document.getElementById("scunguses")!.innerHTML = this.scunguses.toString();
+	document.getElementById("scungusBought")!.innerHTML = this.scungusBought.toString();
+	document.getElementById("scungusCost")!.innerHTML = this.scungusCost.toString();
+	document.getElementById("scungusClicks")!.innerHTML = this.scungusClicks.toString();
 }
 
 }
