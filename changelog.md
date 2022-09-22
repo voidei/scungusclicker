@@ -1,5 +1,22 @@
 # Changelog
 
+## 0.2.1
+
+```diff
++ fixed issue where you could purchase scungus:) without having enough scungus:)
++ reordered the text so it's easier to see your scungus:)
++ minor gramatical tweaks and cleanup
+```
+
+## 0.2.0
+
+```diff
+- tons of pain
++ moved to typescript (fuck you colin, thanks)
++ scungus:) now has whole ass repo
++ scungus:) has a library now
+```
+
 ## 0.1.0
 
 ```plaintext
