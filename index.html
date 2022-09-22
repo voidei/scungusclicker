@@ -3,32 +3,32 @@
 
 <head>
 	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1">
 	<link href="scungus.css" rel="stylesheet">
 	<title>scungus:)</title>
-	<script src="scungus.js"></script>
+	<script src="scungus.ts"></script>
 </head>
 
 <body>
 	<div class="Container">
 		<div class="scungus">
-			<button type="button" class="clickscungus" onclick="clickScungus()">
+			<button type="button" class="clickScungus" onclick="scungus.clickScungus()">
 				<img src="scungus.gif" class="scungusoverthere" alt="scungusoverthere">
 			</button>
 			<div>
-				you have obtained <a id="scungusobtainus">0</a> total scungus:)
+				you have obtained <a id="scungusObtainus">0</a> total scungus:)
 				<br><br>
 				you currently have <a id="scunguses">0</a> many scungus:)
 				<br><br>
-				you have clicked scungus:) <a id="scungusclicks">0</a> many times
-			<button type="button" class="buyscungus" onclick="buyScungus()">
+				you have clicked scungus:) <a id="scungusClicks">0</a> many times
+			<button type="button" class="buyScungus" onclick="scungus.buyScungus()">
 				buy scungus:)
 			</button>
 			<br><br>
 			</div>
-			you have bought <a id="scungusbought">0</a> many scungus:)
+			you have bought <a id="scungusBought">0</a> many scungus:)
 			<br><br>
-			scungus:) currently costs <a id="scunguscost">10</a> many scungus:)
+			scungus:) currently costs <a id="scungusCost">0</a> many scungus:)
 		</div>
 	</div>
 

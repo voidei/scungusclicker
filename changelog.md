@@ -1,5 +1,13 @@
 # Changelog
 
+## 0.2.0
+
+```diff
+- tons of pain
++ moved to typescript (fuck you colin, thanks)
++ scungus:) now has whole ass repo
+```
+
 ## 0.1.0
 
 ```plaintext
