@@ -1,5 +1,15 @@
 # Changelog
 
+## 0.3.0
+
+```diff
++ Added support for `--no-verify` flag
++ scungus:) can now be saved
++ scungus:) can now be loaded
++ scungus:) can now be deleted
+  why would you want to delete scungus:)?
+```
+
 ## 0.2.2
 
 ```diff

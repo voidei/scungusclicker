@@ -7,8 +7,8 @@ class scungus {
 scungusBought = 0;			// number of scungus bought
 scunguses = 0;				// number of scungus
 scungusClicks = 0;			// number of scungus clicked
-scungusObtainus = 0;			// total number of scungus
-scungusCost= 10;				// sost of scungus
+scungusObtainus = 0;		// total number of scungus
+scungusCost= 10;			// sost of scungus
 
 /*---------------------- multiplicative scungi ----------------------*/
 
@@ -47,6 +47,33 @@ buyScungus() {
 	document.getElementById("scungusBought")!.innerHTML = this.scungusBought.toString();
 	document.getElementById("scungusCost")!.innerHTML = this.scungusCost.toString();
 	document.getElementById("scungusClicks")!.innerHTML = this.scungusClicks.toString();
+}
+
+saveScungus() {
+	localStorage.setItem("scungusBought", this.scungusBought.toString());
+	localStorage.setItem("scunguses", this.scunguses.toString());
+	localStorage.setItem("scungusClicks", this.scungusClicks.toString());
+	localStorage.setItem("scungusObtainus", this.scungusObtainus.toString());
+	localStorage.setItem("scungusCost", this.scungusCost.toString());
+	localStorage.setItem("scungusMultiplicative", this.scungusMultiplicative.toString());
+}
+
+loadScungus() {
+	this.scungusBought = parseInt(localStorage.getItem("scungusBought")!);
+	this.scunguses = parseInt(localStorage.getItem("scunguses")!);
+	this.scungusClicks = parseInt(localStorage.getItem("scungusClicks")!);
+	this.scungusObtainus = parseInt(localStorage.getItem("scungusObtainus")!);
+	this.scungusCost = parseInt(localStorage.getItem("scungusCost")!);
+	this.scungusMultiplicative = parseInt(localStorage.getItem("scungusMultiplicative")!);
+
+	document.getElementById("scunguses")!.innerHTML = this.scunguses.toString();
+	document.getElementById("scungusBought")!.innerHTML = this.scungusBought.toString();
+	document.getElementById("scungusCost")!.innerHTML = this.scungusCost.toString();
+	document.getElementById("scungusClicks")!.innerHTML = this.scungusClicks.toString();
+}
+
+deleteScungus() {
+	localStorage.clear();
 }
 
 }

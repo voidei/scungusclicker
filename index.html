@@ -12,10 +12,15 @@
 <body>
 	<div class="Container">
 		<div class="scungus">
+			<button type="button" class="saveScungus" onclick="scungus.saveScungus()">Save Scungus</button>
+			<button type="button" class="loadScungus" onclick="scungus.loadScungus()">Load Scungus</button>
+			<button type="button" class="deleteScungus" onclick="scungus.deleteScungus()">Delete Scungus</button>
+			<br>
 			<button type="button" class="clickScungus" onclick="scungus.clickScungus()">
 				<img src="scungus.gif" class="scungusoverthere" alt="scungusoverthere">
 			</button>
 			<div>
+				<br>
 				you have obtained <a id="scungusObtainus">0</a> total scungus:)
 				<br><br>
 				you have clicked scungus:) <a id="scungusClicks">0</a> many times
