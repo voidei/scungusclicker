@@ -9,7 +9,7 @@ scunguses = 0;				// number of scungus
 scungusClicks = 0;			// number of scungus clicked
 scungusObtainus = 0;		// total number of scungus
 scungusCost= 10;			// sost of scungus
-
+scungi: any;
 /*---------------------- multiplicative scungi ----------------------*/
 
 scungusMultiplicative= 0;	// scungus multiplier
