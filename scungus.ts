@@ -8,7 +8,7 @@ scungusBought = 0;			// number of scungus bought
 scunguses = 0;				// number of scungus
 scungusClicks = 0;			// number of scungus clicked
 scungusObtainus = 0;		// total number of scungus
-scungusCost= 10;			// sost of scungus
+scungusCost= 10;			// cost of scungus
 scungi: any;
 /*---------------------- multiplicative scungi ----------------------*/
 
@@ -74,6 +74,11 @@ loadScungus() {
 
 deleteScungus() {
 	localStorage.clear();
+	this.scungusBought = 0;
+	this.scunguses = 0;
+	this.scungusClicks = 0;
+	this.scungusObtainus = 0;
+	this.scungusCost= 10;
 }
 
 }
