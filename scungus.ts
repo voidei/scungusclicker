@@ -74,11 +74,6 @@ loadScungus() {
 
 deleteScungus() {
 	localStorage.clear();
-	this.scungusBought = 0;
-	this.scunguses = 0;
-	this.scungusClicks = 0;
-	this.scungusObtainus = 0;
-	this.scungusCost= 10;
 }
 
 }
