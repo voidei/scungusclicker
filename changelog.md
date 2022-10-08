@@ -1,5 +1,15 @@
 # Changelog
 
+## 0.3.1
+
+```diff
++ basic prep for autoscungus:)
++ cleaned up the file structure
++ edited and added to the readme
++ some local changes (not on the repo)
+- Removed support for `--no-verify` flag
+```
+
 ## 0.3.0
 
 ```diff
@@ -55,3 +65,5 @@ M U L T I P L I C A T I V E S C U N G I
 ```diff
 + scungus:) is released to the world
 ```
+
+### [back](https://github.com/voidei/scungusclicker)

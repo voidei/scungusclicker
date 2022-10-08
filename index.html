@@ -4,9 +4,9 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1">
-	<link href="scungus.css" rel="stylesheet">
+	<link href="src/site/css/scungus.css" rel="stylesheet">
 	<title>scungus:)</title>
-	<script src="src/scunguslib.js"></script>
+	<script src="src/scripts/js/scunguslib.js"></script>
 </head>
 
 <body>
@@ -17,7 +17,7 @@
 			<button type="button" class="deleteScungus" onclick="scungus.deleteScungus()">Delete Scungus</button>
 			<br>
 			<button type="button" class="clickScungus" onclick="scungus.clickScungus()">
-				<img src="scungus.gif" class="scungusoverthere" alt="scungusoverthere">
+				<img src="src/img/scungus.gif" class="scungusoverthere" alt="scungusoverthere">
 			</button>
 			<div>
 				<br>
@@ -27,13 +27,18 @@
 				<br><br>
 				you currently have <a id="scunguses">0</a> many scungus:)
 				<button type="button" class="buyScungus" onclick="scungus.buyScungus()">
-				buy scungus:)
+					buy scungus:)
+				</button>
+				<button type="button" class="buyAutoscungus" onclick="scungus.buyAutoscungus()">
+					buy autoscungus:)
 				</button>
 			</div>
 			<br>
-			you have bought <a id="scungusBought">0</a> many scungus:)
+			you have bought <a id="scungusBought">0</a> many scungus:) and <a id="autoScungusbought">0</a> many autoscungus:)
 			<br><br>
 			scungus:) currently costs <a id="scungusCost">10</a> many scungus:)
+			<br>
+			autoscungus:) currently costs <a id="autoScungusCost">100</a> many scungus:)
 		</div>
 	</div>
 

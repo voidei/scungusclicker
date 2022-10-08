@@ -2,7 +2,7 @@ const path = require('path');
 
 module.exports = {
 	mode: "production",
-	entry: path.resolve(__dirname, './scungus.ts'),
+	entry: path.resolve(__dirname, 'src/scripts/ts/scungus.ts'),
 	module: {
 		rules: [
 			{
@@ -17,7 +17,7 @@ module.exports = {
 	},
 	output: {
 		filename: 'scunguslib.js',
-		path: path.resolve(__dirname, 'src'),
+		path: path.resolve(__dirname, 'src/scripts/js'),
 		libraryTarget: 'var',
 		library: 'scungus'
 	},

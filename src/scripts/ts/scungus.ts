@@ -8,7 +8,7 @@ scungusBought = 0;			// number of scungus bought
 scunguses = 0;				// number of scungus
 scungusClicks = 0;			// number of scungus clicked
 scungusObtainus = 0;		// total number of scungus
-scungusCost= 10;			// cost of scungus
+scungusCost = 10;			// cost of scungus
 scungi: any;
 /*---------------------- multiplicative scungi ----------------------*/
 
@@ -49,6 +49,8 @@ buyScungus() {
 	document.getElementById("scungusClicks")!.innerHTML = this.scungusClicks.toString();
 }
 
+/*---------------------- local scungus storage ----------------------*/
+
 saveScungus() {
 	localStorage.setItem("scungusBought", this.scungusBought.toString());
 	localStorage.setItem("scunguses", this.scunguses.toString());
@@ -75,6 +77,10 @@ loadScungus() {
 deleteScungus() {
 	localStorage.clear();
 }
+
+/*-------------------------------------------------------------------*/
+
+
 
 }
 
