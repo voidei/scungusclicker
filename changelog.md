@@ -1,5 +1,14 @@
 # Changelog
 
+## 0.3.2
+
+```diff
++ changed the maths for how scungusCost is calculated
++ scungusAuto can now be purchased
+  scungusAuto doesn't do anything yet tho
++ scungusObtainus (total scungus:) obtained) is now correctly tracked
+```
+
 ## 0.3.1
 
 ```diff
