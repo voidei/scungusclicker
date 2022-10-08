@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.3.3
+
+```diff
++ fixed issue where scungusAutocost wouldn't correctly update
+```
+
 ## 0.3.2
 
 ```diff
