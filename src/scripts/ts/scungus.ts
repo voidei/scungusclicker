@@ -55,6 +55,18 @@ buyAutoscungus() {
 	document.getElementById("scungusAutocost")!.innerHTML = this.scungusAutocost.toString();
 }
 
+scungusAuto() {
+	while (true) {
+		if (this.scungusAutobought > 0) {
+			this.scunguses += 1;
+			this.scungusObtainus += 1;
+			document.getElementById("scunguses")!.innerHTML = this.scunguses.toString();
+		}
+		else {
+		}
+	}
+}
+
 /*---------------------- local scungus storage ----------------------*/
 
 saveScungus() {
