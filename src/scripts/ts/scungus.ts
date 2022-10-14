@@ -7,43 +7,44 @@ class scungus {
 scungusBought = 0;			// number of scungus bought
 scungusCost = 10;			// cost of scungus
 scungusAutobought = 0;		// number of autoscungus bought
-scungusAutocost = 100;
+scungusAutocost = 100;		// cost of autoscungus
 scunguses = 0;				// number of scungus
 scungusClicks = 0;			// number of scungus clicked
 scungusObtainus = 0;		// total number of scungus
 scungi: any;
-/*---------------------- multiplicative scungi ----------------------*/
-
 scungusMultiplicative= 0;	// scungus multiplier
+
+
+lastUpdate = performance.now();
 
 /*---------------------------- functions ----------------------------*/
 
-clickScungus() {
-	this.scungusMultiplicative = 1+(Math.floor(this.scungusBought*2.5));
-	this.scunguses += this.scungusMultiplicative;
-	this.scungusObtainus += this.scungusMultiplicative;
-	this.scungusClicks += 1;
+	clickScungus() {
+		this.scungusMultiplicative = 1+(Math.floor(this.scungusBought*2.5));
+		this.scunguses += this.scungusMultiplicative;
+		this.scungusObtainus += this.scungusMultiplicative;
+		this.scungusClicks += 1;
 
-	document.getElementById("scunguses")!.innerHTML = this.scunguses.toString();
-	document.getElementById("scungusClicks")!.innerHTML = this.scungusClicks.toString();
-	document.getElementById("scungusObtainus")!.innerHTML = this.scungusObtainus.toString();
+		document.getElementById("scunguses")!.innerHTML = this.scunguses.toString();
+		document.getElementById("scungusClicks")!.innerHTML = this.scungusClicks.toString();
+		document.getElementById("scungusObtainus")!.innerHTML = this.scungusObtainus.toString();
 
-}
-
-buyScungus() {
-	if (this.scunguses >= this.scungusCost) {
-		this.scunguses -= this.scungusCost;
-		this.scungusBought += 1;
-		this.scungusCost = this.scungusCost+(this.scungusBought+17);
 	}
 
+	buyScungus() {
+		if (this.scunguses >= this.scungusCost) {
+			this.scunguses -= this.scungusCost;
+			this.scungusBought += 1;
+			this.scungusCost = this.scungusCost+(this.scungusBought+17);
+		}
 
-	document.getElementById("scunguses")!.innerHTML = this.scunguses.toString();
-	document.getElementById("scungusBought")!.innerHTML = this.scungusBought.toString();
-	document.getElementById("scungusCost")!.innerHTML = this.scungusCost.toString();
-}
 
-buyAutoscungus() {
+		document.getElementById("scunguses")!.innerHTML = this.scunguses.toString();
+		document.getElementById("scungusBought")!.innerHTML = this.scungusBought.toString();
+		document.getElementById("scungusCost")!.innerHTML = this.scungusCost.toString();
+	}
+
+	buyAutoscungus() {
 	if (this.scunguses >= this.scungusAutocost) {
 		this.scunguses -= this.scungusAutocost;
 		this.scungusAutobought += 1;
@@ -53,6 +54,21 @@ buyAutoscungus() {
 	document.getElementById("scunguses")!.innerHTML = this.scunguses.toString();
 	document.getElementById("scungusAutobought")!.innerHTML = this.scungusAutobought.toString();
 	document.getElementById("scungusAutocost")!.innerHTML = this.scungusAutocost.toString();
+}
+
+autoScungus = (current: number) => {
+	if (this.lastUpdate + 1000 < current) {
+		console.log("current diff " + (current - this.lastUpdate));
+		this.scunguses += this.scungusAutobought;
+		this.lastUpdate += 1000;
+		document.getElementById("scunguses")!.innerHTML = this.scunguses.toString();
+	}
+	window.requestAnimationFrame(this.autoScungus)
+}
+
+constructor() {
+	this.lastUpdate = performance.now();
+	window.requestAnimationFrame(this.autoScungus);
 }
 
 /*---------------------- local scungus storage ----------------------*/
@@ -66,6 +82,7 @@ saveScungus() {
 	localStorage.setItem("scungusMultiplicative", this.scungusMultiplicative.toString());
 	localStorage.setItem("scungusAutobought", this.scungusAutobought.toString());
 	localStorage.setItem("scungusAutocost", this.scungusAutocost.toString());
+	alert("scungus:\) saved");
 }
 
 loadScungus() {
@@ -90,12 +107,13 @@ loadScungus() {
 
 deleteScungus() {
 	localStorage.clear();
+	alert("scungus:) deleted");
 }
+
+
+}
+
 
 /*-------------------------------------------------------------------*/
-
-
-
-}
 
 module.exports = new scungus();

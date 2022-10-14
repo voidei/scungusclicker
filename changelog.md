@@ -1,5 +1,12 @@
 # Changelog
 
+## 0.4.0
+
+```diff
++ autoScungus is now working :O!!!!!!!!!!!!!
+  colin to the rescue, he literally saved the day
+```
+
 ## 0.3.3
 
 ```diff
