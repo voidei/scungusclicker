@@ -56,13 +56,6 @@ lastUpdate = performance.now();
 	document.getElementById("scungusAutocost")!.innerHTML = this.scungusAutocost.toString();
 }
 
-/*
-autoScungus = (current: number) => {
-	this.scunguses += this.scungusAutobought
-	document.getElementById("scunguses")!.innerHTML = this.scunguses.toString();
-	window.requestAnimationFrame(this.autoScungus)
-}
-*/
 autoScungus = (current: number) => {
 	if (this.lastUpdate + 1000 < current) {
 		console.log("current diff " + (current - this.lastUpdate));
@@ -71,6 +64,11 @@ autoScungus = (current: number) => {
 		document.getElementById("scunguses")!.innerHTML = this.scunguses.toString();
 	}
 	window.requestAnimationFrame(this.autoScungus)
+}
+
+constructor() {
+	this.lastUpdate = performance.now();
+	window.requestAnimationFrame(this.autoScungus);
 }
 
 /*---------------------- local scungus storage ----------------------*/
