@@ -5,6 +5,18 @@ html {
 	padding: 0px;
 }
 
+.column {
+	float: left;
+	width: 50%;
+}
+
+.row:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+
 .Container {
 	width: 90%;
 	min-width: 500px;
@@ -28,7 +40,6 @@ header span {
 	width: 100%;
 	height: 700px;
 	padding: 10px 0px;
-	background-color: rgb(54, 54, 54);
 }
 
 footer {
