@@ -19,6 +19,6 @@ module.exports = {
 		filename: 'scunguslib.js',
 		path: path.resolve(__dirname, 'src/scripts/js'),
 		libraryTarget: 'var',
-		library: 'scungus'
+		library: 'scunguslib'
 	},
 };

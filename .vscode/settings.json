@@ -1,4 +1,12 @@
 {
+	"ColorfulMonorepo.workspaces.collection": [
+		{
+			"path": "e:\\GitHub\\Repos\\scungusclicker",
+			"label": "🌱  undefined",
+			"foreground": "#000000",
+			"background": "#9593d8"
+		}
+	],
 	"explicitFolding.rules": {
 		"typescript": {
 			"start": "/*",
@@ -7,5 +15,6 @@
 	},
 	"[markdown]": {
 		"editor.insertSpaces": true
-	}
+	},
+	"launchOption.currentConfig": {}
 }

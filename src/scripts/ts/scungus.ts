@@ -1,4 +1,6 @@
 class scungus {
+	// Path: src\scripts\ts\scungus.ts
+
 
 /*------------------------ base declarations ------------------------*/
 
