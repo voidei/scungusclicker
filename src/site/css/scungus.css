@@ -1,26 +1,8 @@
 html {
-	background-color: black;
-	color: white;
+	background-color: rgb(48, 48, 48);
+	color: #fff;
 	margin: 0px;
 	padding: 0px;
-}
-
-.column {
-	float: left;
-	width: 50%;
-}
-
-.row:after {
-	content: "";
-	display: table;
-	clear: both;
-}
-
-
-.Container {
-	width: 90%;
-	min-width: 500px;
-	margin: auto;
 }
 
 header {
@@ -36,17 +18,24 @@ header span {
 	padding-left: 20px;
 }
 
-.scungus {
-	width: 100%;
-	height: 700px;
-	padding: 10px 0px;
-}
-
 footer {
 	width: 100%;
-	height: 80px;
-	background-color: gray;
+	height: 100px;
+	background-color: rgb(48, 48, 48);
+	color: #fff;
 	margin-bottom: 20px;
+}
+
+.row {
+	display: flex;
+}
+.column {
+	flex: 50%;
+}
+
+.scungus {
+	height: flex;
+	width: flex;
 }
 
 .button {
@@ -68,6 +57,8 @@ footer {
 		inset -2px -2px 3px rgba(0, 0, 0, 0.6);
 }
 
+/* region - buttons */
+
 .button:hover {
 	background-color: rgb(71, 71, 71);
 }
@@ -78,10 +69,7 @@ footer {
 	background-color: rgba(67, 67, 179, 0.6);
 }
 
-:only-child:is(:disabled) {
-	orphans: 1;
-}
-
+/* TODO - make the buttons unique and stand out, while making them look good and not ugly */
 .saveScungus {
 	border: 0;
 	line-height: 2.5;
@@ -154,3 +142,4 @@ footer {
 	background-color: rgba(255, 0, 0, 0.6);
 }
 
+/* end region */

@@ -1,5 +1,13 @@
 # Changelog
 
+## 0.4.2
+
+```diff
+- the scuffed update
++ unscuffed the update
+  scuffgus is back to being scungus
+```
+
 ## 0.4.1
 
 ```diff
