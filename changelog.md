@@ -6,6 +6,7 @@
 + autoscungus now properly updates the total scungus
   scuffgus update
 ```
+
 ## 0.4.0
 
 ```diff
