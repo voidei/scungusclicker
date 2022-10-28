@@ -1,5 +1,20 @@
 # Changelog
 
+## 0.4.2
+
+```diff
+- the scuffed update
++ unscuffed the update
+  scuffgus is back to being scungus
+```
+
+## 0.4.1
+
+```diff
++ autoscungus now properly updates the total scungus
+  scuffgus update
+```
+
 ## 0.4.0
 
 ```diff
