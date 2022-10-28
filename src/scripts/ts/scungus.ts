@@ -1,4 +1,6 @@
 class scungus {
+	// Path: src\scripts\ts\scungus.ts
+
 
 /*------------------------ base declarations ------------------------*/
 
@@ -60,6 +62,7 @@ autoScungus = (current: number) => {
 	if (this.lastUpdate + 1000 < current) {
 		console.log("current diff " + (current - this.lastUpdate));
 		this.scunguses += this.scungusAutobought;
+		this.scungusObtainus += this.scungusAutobought;
 		this.lastUpdate += 1000;
 		document.getElementById("scunguses")!.innerHTML = this.scunguses.toString();
 	}
