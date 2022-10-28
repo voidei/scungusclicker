@@ -1,5 +1,17 @@
 # Changelog
 
+## 0.4.3
+
+```diff
+- all those fucking bugs
+```
+
+## 0.4.2.1
+
+```diff
++ a bunch of fucking bugs
+```
+
 ## 0.4.2
 
 ```diff

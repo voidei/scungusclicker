@@ -34,8 +34,9 @@ footer {
 }
 
 .scungus {
-	height: flex;
-	width: flex;
+	height: 200px flex;
+	width: 200px flex;
+	flex: 50%;
 }
 
 .button {
