@@ -24,10 +24,12 @@ clickScungus() {
 	this.scunguses += this.scungusMultiplicative;
 	this.scungusObtainus += this.scungusMultiplicative;
 	this.scungusClicks += 1;
+
 	document.getElementById("scunguses")!.innerHTML = this.scunguses.toString();
 	document.getElementById("scungusClicks")!.innerHTML = this.scungusClicks.toString();
 	document.getElementById("scungusObtainus")!.innerHTML = this.scungusObtainus.toString();
-}
+
+	console.log("scungus clicked");}
 
 buyScungus() {
 	if (this.scunguses >= this.scungusCost) {
@@ -86,23 +88,27 @@ saveScungus() {
 }
 
 loadScungus() {
-	this.scungusBought = parseInt(localStorage.getItem("scungusBought")!);
-	this.scunguses = parseInt(localStorage.getItem("scunguses")!);
-	this.scungusClicks = parseInt(localStorage.getItem("scungusClicks")!);
-	this.scungusObtainus = parseInt(localStorage.getItem("scungusObtainus")!);
-	this.scungusCost = parseInt(localStorage.getItem("scungusCost")!);
-	this.scungusMultiplicative = parseInt(localStorage.getItem("scungusMultiplicative")!);
-	this.scungusAutocost = parseInt(localStorage.getItem("scungusAutocost")!);
-	this.scungusAutobought = parseInt(localStorage.getItem("scungusAutobought")!);
-
-	document.getElementById("scunguses")!.innerHTML = this.scunguses.toString();
-	document.getElementById("scungusBought")!.innerHTML = this.scungusBought.toString();
-	document.getElementById("scungusCost")!.innerHTML = this.scungusCost.toString();
-	document.getElementById("scungusClicks")!.innerHTML = this.scungusClicks.toString();
-	document.getElementById("scungusObtainus")!.innerHTML = this.scungusObtainus.toString();
-	document.getElementById("scungusMultiplicative")!.innerHTML = this.scungusMultiplicative.toString();
-	document.getElementById("scungusAutobought")!.innerHTML = this.scungusAutobought.toString();
-	document.getElementById("scungusAutocost")!.innerHTML = this.scungusAutocost.toString();
+	if (Number.isNaN) {
+		alert("scungus:) not found");
+	}
+	else {
+		this.scungusBought = parseInt(localStorage.getItem("scungusBought")!);
+		this.scunguses = parseInt(localStorage.getItem("scunguses")!);
+		this.scungusClicks = parseInt(localStorage.getItem("scungusClicks")!);
+		this.scungusObtainus = parseInt(localStorage.getItem("scungusObtainus")!);
+		this.scungusCost = parseInt(localStorage.getItem("scungusCost")!);
+		this.scungusMultiplicative = parseInt(localStorage.getItem("scungusMultiplicative")!);
+		this.scungusAutocost = parseInt(localStorage.getItem("scungusAutocost")!);
+		this.scungusAutobought = parseInt(localStorage.getItem("scungusAutobought")!);
+		document.getElementById("scunguses")!.innerHTML = this.scunguses.toString();
+		document.getElementById("scungusBought")!.innerHTML = this.scungusBought.toString();
+		document.getElementById("scungusCost")!.innerHTML = this.scungusCost.toString();
+		document.getElementById("scungusClicks")!.innerHTML = this.scungusClicks.toString();
+		document.getElementById("scungusObtainus")!.innerHTML = this.scungusObtainus.toString();
+		document.getElementById("scungusMultiplicative")!.innerHTML = this.scungusMultiplicative.toString();
+		document.getElementById("scungusAutobought")!.innerHTML = this.scungusAutobought.toString();
+		document.getElementById("scungusAutocost")!.innerHTML = this.scungusAutocost.toString();
+	}
 }
 
 deleteScungus() {

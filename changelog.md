@@ -1,5 +1,13 @@
 # Changelog
 
+## 0.4.4
+
+```diff
++ you can no longer load scungus:) when there are no scungus:) to load
++ popup for when you try to load scungus:) and there are no scungus:) to load
+  thanks skye~ *kith* <3
+```
+
 ## 0.4.3
 
 ```diff
