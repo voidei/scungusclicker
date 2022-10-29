@@ -29,7 +29,7 @@ clickScungus() {
 	document.getElementById("scungusClicks")!.innerHTML = this.scungusClicks.toString();
 	document.getElementById("scungusObtainus")!.innerHTML = this.scungusObtainus.toString();
 
-	console.log("scungus clicked");}
+}
 
 buyScungus() {
 	if (this.scunguses >= this.scungusCost) {
@@ -84,6 +84,7 @@ saveScungus() {
 	localStorage.setItem("scungusMultiplicative", this.scungusMultiplicative.toString());
 	localStorage.setItem("scungusAutobought", this.scungusAutobought.toString());
 	localStorage.setItem("scungusAutocost", this.scungusAutocost.toString());
+	console.log("scungus:) saved");
 	alert("scungus:\) saved");
 }
 
@@ -108,11 +109,14 @@ loadScungus() {
 		document.getElementById("scungusMultiplicative")!.innerHTML = this.scungusMultiplicative.toString();
 		document.getElementById("scungusAutobought")!.innerHTML = this.scungusAutobought.toString();
 		document.getElementById("scungusAutocost")!.innerHTML = this.scungusAutocost.toString();
+		console.log("scungus:) loaded");
+		alert("scungus:) loaded");
 	}
 }
 
 deleteScungus() {
 	localStorage.clear();
+	console.log("scungus:) deleted");
 	alert("scungus:) deleted");
 }
 
