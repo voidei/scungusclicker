@@ -10,3 +10,7 @@
   .btn-success, .btn-danger {
 	width:200px;
   }
+
+.scungus {
+	background-image: "../img/scungus.gif";
+}
