@@ -1,5 +1,12 @@
 # Changelog
 
+## 0.4.7
+
+```diff
++ ultrascungus:)
+  thanks to canberk for the idea~~
+```
+
 ## 0.4.4
 
 ```diff
