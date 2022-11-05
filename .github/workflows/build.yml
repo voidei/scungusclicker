@@ -13,14 +13,18 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: 16.*
-
       - run: npm ci
       - run: npm run build
+
+
       - uses: actions/upload-artifact@v3
         with:
           name: dist
           path: dist/scunguslib.js
+          if-no-files-found: error
 
+      - name: Add files
+        uses:
       - name: Commit files
         run: |
           git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
