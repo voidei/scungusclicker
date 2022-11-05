@@ -25,13 +25,9 @@ jobs:
           path: dist/scunguslib.js
           if-no-files-found: error
 
-      - name: Commit files
-        run: |
-          git add dist/scunguslib.js
-          git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git config --local user.name "github-actions[bot]"
-          git commit -a -m "Add changes"
-          git push
+      - name: Git Auto Commit
+        uses: stefanzweifel/git-auto-commit-action@v4.15.4
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
+          commit_message: "scunguslib build"
           branch: main
+          file_pattern: "*.js"
