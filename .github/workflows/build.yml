@@ -34,4 +34,4 @@ jobs:
         with:
           commit_message: "scunguslib build"
           branch: main
-          file_pattern: "*.js"
+          file_pattern: "dist/scunguslib.js"
