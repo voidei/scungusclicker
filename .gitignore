@@ -131,8 +131,6 @@ dist
 .yarn/install-state.gz
 .pnp.*
 
-
-
 # SECTION: VSCode
 
 .vscode/*
@@ -147,4 +145,3 @@ dist
 
 # Built Visual Studio Code Extensions
 *.vsix
-
