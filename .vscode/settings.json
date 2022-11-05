@@ -7,14 +7,4 @@
 			"background": "#9593d8"
 		}
 	],
-	"explicitFolding.rules": {
-		"typescript": {
-			"start": "/*",
-			"end": "/*-------------------------------------------------------------------*/"
-		}
-	},
-	"[markdown]": {
-		"editor.insertSpaces": true
-	},
-	"launchOption.currentConfig": {}
 }
