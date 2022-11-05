@@ -25,6 +25,7 @@ jobs:
 
       - name: Commit files
         run: |
+          git add dist/scunguslib.js
           git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
           git commit -a -m "Add changes"
