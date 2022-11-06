@@ -1,20 +1,21 @@
 html {
 	background-color: #111311;
-	color: #FFF;
+	color: #fff;
 }
 
 .container {
-	padding:5px 30px 30px 30px;
-	margin:30px;
-	border:solid white 1px;
-	border-radius:5px;
+	padding: 5px 30px 30px 30px;
+	margin: 30px;
+	border: solid white 1px;
+	border-radius: 5px;
 	/*background-color:#e6e6e6;*/
-	text-align:center;
-  }
+	text-align: center;
+}
 
-  .btn-success, .btn-danger {
-	width:200px;
-  }
+.btn-success,
+.btn-danger {
+	width: 200px;
+}
 
 .scungus {
 	background-image: "../img/scungus.gif";

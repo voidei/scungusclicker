@@ -1,18 +1,35 @@
+# Stop the editor from looking for .editorconfig files in the parent directories
+root = true
+
 [*]
+charset = utf-8
 trim_trailing_whitespace = true
 insert_final_newline = true
-indent_size = 4
 indent_style = tab
+indent_size = 4
+tab_width = 4
 end_of_line = crlf
+
+
+[*.{json, jsonc}]
+indent_style = tab
+indent_size = 2
+tab_width = 2
+
+
+[*.{html}]
+indent_size = 2
+tab_width = 2
+
 
 [*.{py, md}]
 indent_style = space
 indent_size = 2
+tab_width = 2
 
+
+# I have no idea why it needs yml files to be seperated from the rest, for some reason it just refuses to space indent them if it's included in the py and md section
 [*.yml]
 indent_style = space
 indent_size = 2
-
-[*.json]
-indent_style = tab
-indent_size = 2
+tab_width = 2

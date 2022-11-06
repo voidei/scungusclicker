@@ -1,1 +1,5 @@
-node_modules/*
+# yarn/npm stuff
+node_modules/
+
+# build and old files
+archive/

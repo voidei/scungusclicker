@@ -1,10 +1,10 @@
 {
-	"ColorfulMonorepo.workspaces.collection": [
-		{
-			"path": "e:\\GitHub\\Repos\\scungusclicker",
-			"label": "🌱  undefined",
-			"foreground": "#000000",
-			"background": "#9593d8"
-		}
-	],
+    "ColorfulMonorepo.workspaces.collection": [
+        {
+            "path": "e:\\GitHub\\Repos\\scungusclicker",
+            "label": "🌱  undefined",
+            "foreground": "#000000",
+            "background": "#9593d8"
+        }
+    ],
 }

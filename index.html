@@ -1,57 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta
+			name="viewport"
+			content="width=device-width, height=device-height, initial-scale=1"
+		>
+		<link href="src/css/scungus.css" rel="stylesheet">
+		<title>scungus:)</title>
+	</head>
 
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1">
-	<link href="src/css/scungus.css" rel="stylesheet">
-	<title>scungus:)</title>
-</head>
+	<body>
+		<header>
+			<span>
+				<button
+					type="button"
+					class="saveScungus"
+					onclick="scungus.saveScungus()"
+				>
+					Save Scungus
+				</button>
+				<button
+					type="button"
+					class="loadScungus"
+					onclick="scungus.loadScungus()"
+				>
+					Load Scungus
+				</button>
+				<button
+					type="button"
+					class="deleteScungus"
+					onclick="scungus.deleteScungus()"
+				>
+					Delete Scungus
+				</button>
+			</span>
+		</header>
 
-<body>
-	<header>
-		<span>
-			<button type="button" class="saveScungus" onclick="scungus.saveScungus()">Save Scungus</button>
-			<button type="button" class="loadScungus" onclick="scungus.loadScungus()">Load Scungus</button>
-			<button type="button" class="deleteScungus" onclick="scungus.deleteScungus()">Delete Scungus</button>
-		</span>
-	</header>
+		<div class="row">
+			<div class="column">
+				<button
+					type="button"
+					class="scungus"
+					onclick="scungus.clickScungus()"
+				>
+					<img src="src/img/scungus.gif" alt="scungus:)">
+				</button>
+			</div>
 
-	<div class="row">
-
-		<div class="column">
-
-			<button type="button" class="scungus" onclick="scungus.clickScungus()">
-				<img src="src/img/scungus.gif" alt="scungus:)">
-			</button>
-
+			<div class="column">
+				<column-background>
+					you have obtained <a id="scungusObtainus">0</a> total
+					scungus:) <br><br>
+					you have clicked scungus:) <a id="scungusClicks">0</a> many
+					times <br><br>
+					you currently have <a id="scunguses">0</a> many scungus:)
+					<br><br>
+					<button
+						type="submit"
+						class="buyScungus"
+						onclick="scungus.buyScungus()"
+					>
+						buy scungus:)
+					</button>
+					you have bought <a id="scungusBought">0</a> many scungus:)
+					<br><br>
+					<button
+						type="submit"
+						class="buyAutoscungus"
+						onclick="scungus.buyAutoscungus()"
+					>
+						buy autoscungus:)
+					</button>
+					you have bought <a id="scungusAutobought">0</a> many
+					autoscungus:) <br><br>
+					scungus:) currently costs <a id="scungusCost">10</a> many
+					scungus:) <br><br>
+					autoscungus:) currently costs
+					<a id="scungusAutocost">100</a> many scungus:) <br><br>
+					<button
+						type="submit"
+						class="buyUltrascungus"
+						onclick="scungus.buyUltrascungus()"
+					>
+						buy ultra scungus:)
+					</button>
+					you have bought <a id="scungusUltrabought">0</a> many ultra
+					scungus:)
+					<br>
+					ultra scungus:) currently costs
+					<a id="scungusUltracost">1000</a> many scungus:)
+				</column-background>
+			</div>
 		</div>
-
-		<div class="column">
-			<column-background>
-			you have obtained <a id="scungusObtainus">0</a> total scungus:)
-			<br><br>
-			you have clicked scungus:) <a id="scungusClicks">0</a> many times
-			<br><br>
-			you currently have <a id="scunguses">0</a> many scungus:)
-			<br><br>
-			<button type="submit" class="buyScungus" onclick="scungus.buyScungus()">buy scungus:)</button> you have bought <a id="scungusBought">0</a> many scungus:)
-			<br><br>
-			<button type="submit" class="buyAutoscungus" onclick="scungus.buyAutoscungus()">buy autoscungus:)</button> you have bought <a id="scungusAutobought">0</a> many autoscungus:)
-			<br><br>
-			scungus:) currently costs <a id="scungusCost">10</a> many scungus:)
-			<br><br>
-			autoscungus:) currently costs <a id="scungusAutocost">100</a> many scungus:)
-			<br><br>
-			<button type="submit" class="buyUltrascungus" onclick="scungus.buyUltrascungus()">buy ultra scungus:)</button> you have bought <a id="scungusUltrabought">0</a> many ultra scungus:)
-			<br>
-			ultra scungus:) currently costs <a id="scungusUltracost">1000</a> many scungus:)
-		</column-background>
-		</div>
-
-	</div>
-</body>
-
-
+	</body>
 </html>
-<script src="dist/scunguslib.js">window.onload = function () {scungus}</script>
+<script src="dist/scunguslib.js">
+	window.onload = function () {scungus}
+</script>
