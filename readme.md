@@ -13,5 +13,3 @@ where you click scungus:\) to get scungus:\)
 [license](LICENSE)
 
 ### credits&colon;
-
-[W3.Schools](https://www.w3schools.com/w3css/tryit.asp?filename=tryw3css_templates_webpage&stacked=h) for the template I used
