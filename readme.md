@@ -19,3 +19,6 @@ where you click scungus:\) to get scungus:\)
 [scungus:\)](https://voidei.github.io/scungusclicker/)
 
 [changelog](changelog.md)
+
+
+![Size](https://github-size-badge.herokuapp.com/voidei/scungusclicker.svg)
